@@ -36,6 +36,7 @@ header .lede{color:var(--muted);margin:0;max-width:60ch}
 .nowbar{background:var(--now-soft);border-radius:var(--r);padding:12px 14px;display:flex;gap:10px;align-items:flex-start}
 .nowbar .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--now);font-weight:600;white-space:nowrap;padding-top:2px}
 .nowbar p{margin:0}
+.nowbar a{color:var(--now)}
 section{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 16px}
 section > h2{font-family:var(--f-display);font-weight:600;font-size:26px;line-height:1.15;margin:0 0 12px;display:flex;gap:10px;align-items:baseline;text-wrap:balance}
 section > h2 .num{font-family:var(--f-body);font-size:12px;font-weight:600;color:var(--gold);letter-spacing:.08em}
@@ -85,6 +86,24 @@ ul.terms li::marker{color:var(--gold)}
 a{color:var(--gold)}
 footer{text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7}
 footer .brand{font-family:var(--f-display);font-size:20px;color:var(--ink);letter-spacing:.04em}
+.st p a{color:var(--gold)}
+.do{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0 6px}
+.do video,.do img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;background:var(--paper-2);display:block}
+.do img{object-fit:contain;background:#fff}
+.do-l{margin:6px 0 2px!important;font-size:13px!important}
+.btn-s{display:inline-block;border:1px solid var(--ink);background:var(--ink);color:var(--bg);border-radius:999px;padding:7px 15px;font:inherit;font-size:13.5px;text-decoration:none;cursor:pointer}
+.btn-s.vien{background:var(--paper);color:var(--ink)}
+.btn-s:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.sign{margin-top:16px;border:1px dashed var(--gold);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.sign h3{font-family:var(--f-display);font-size:22px;margin:0}
+.sign label{font-size:13px;color:var(--muted)}
+.sign input[type=text]{font:inherit;font-size:16px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
+#kyCv{width:100%;height:auto;aspect-ratio:3/1;border:1px solid var(--line);border-radius:8px;background:#fff;touch-action:none;cursor:crosshair}
+.sign-r{display:flex;gap:8px;flex-wrap:wrap}
+.sign .chk{display:flex;gap:8px;align-items:flex-start;color:var(--ink);font-size:14px;cursor:pointer}
+.sign .chk input{width:20px;height:20px;flex-shrink:0;accent-color:var(--done);margin:1px 0 0}
+.loi{color:var(--now);font-size:13.5px;margin:0}
+#kyAnh{width:100%;border:1px solid var(--line);border-radius:8px}
 /* nội bộ */
 .nb{background:var(--paper);border:1px solid var(--gold);border-radius:var(--r);padding:16px}
 .nb h2{font-family:var(--f-display);font-size:24px;margin:0 0 10px}
@@ -141,7 +160,7 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
 
 <div class="nowbar">
   <span class="k"><span class="en">Next step</span><span class="vi">Bước tiếp</span></span>
-  <p><span class="en">Please read the order agreement (section 4) and reply <b>“I agree”</b> on WhatsApp, with your partner's name for the veil.</span><span class="vi">Khách đọc hợp đồng (mục 4), nhắn <b>“I agree”</b> trên WhatsApp kèm tên chú rể để thêu voan.</span></p>
+  <p><span class="en">Please <a href="#agreement">sign your order agreement online</a> (section 4) and send it to us on WhatsApp, with your partner's name for the veil.</span><span class="vi">Khách <a href="#agreement">ký hợp đồng online</a> (mục 4), gửi ảnh HĐ đã ký qua WhatsApp kèm tên chú rể để thêu voan.</span></p>
 </div>
 
 
@@ -204,8 +223,8 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
 <li class="st now pay">
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
-    <div class="sh"><span class="sn">3</span><b><span class="en">Payment 1: 30%</span><span class="vi">Thanh toán đợt 1: 30%</span></b><span class="pill"><span class="en">Your turn</span><span class="vi">Đến lượt khách</span></span></div>
-    <p><span class="en"><b>US$564 received on 29 Oct. Thank you!</b> Now: please reply <b>“I agree”</b> to the order agreement below and send your partner's name for the veil. Then our designer draws your sketch and we choose the lace and fabric together.</span><span class="vi"><b>Đã nhận US$564 ngày 29/10.</b> Đang làm: khách nhắn <b>“I agree”</b> + tên chú rể → designer vẽ phác thảo, cùng khách chọn ren, vải</span></p>
+    <div class="sh"><span class="sn">3</span><b><span class="en">Payment 1: 30% · sign your agreement</span><span class="vi">Thanh toán đợt 1: 30% · ký hợp đồng</span></b><span class="pill"><span class="en">Your turn</span><span class="vi">Đến lượt khách</span></span></div>
+    <p><span class="en"><b>US$564 received on 29 Oct. Thank you!</b> Now: please <a href="#agreement">sign your order agreement online</a> (section 4) and send your partner's name for the veil. Then our designer draws your sketch and we choose the lace and fabric together.</span><span class="vi"><b>Đã nhận US$564 ngày 29/10.</b> Đang làm: khách <a href="#agreement">ký hợp đồng online</a> (mục 4) + gửi tên chú rể → designer vẽ phác thảo, cùng khách chọn ren, vải</span></p>
     <div class="when"><span class="en">Now · Nov 2026</span><span class="vi">Đang làm · tháng 11/2026</span></div>
     
   </div>
@@ -214,7 +233,7 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
     <div class="sh"><span class="sn">4</span><b><span class="en">Measure at home</span><span class="vi">Khách tự đo tại nhà</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
-    <p><span class="en">Follow our measuring guide (1‑minute clip + chart). We check and confirm your measurements before we build the shape.</span><span class="vi">Khách đo theo hướng dẫn (clip 1 phút + bảng) · shop kiểm và xác nhận số đo trước khi dựng dáng</span></p>
+    <p><span class="en">Follow our measuring guide below (1‑minute clip + chart). We check and confirm your measurements before we build the shape.</span><span class="vi">Khách đo theo hướng dẫn bên dưới (clip 1 phút + bảng) · shop kiểm và xác nhận số đo trước khi dựng dáng</span></p><div class="do"><video controls playsinline preload="none" poster="https://vietnamweddinggown.com/anh/do-so-do/clip-do-so-do-en.jpg" width="720" height="1280"><source src="https://vietnamweddinggown.com/anh/do-so-do/clip-do-so-do-en.mp4" type="video/mp4"></video><a href="https://vietnamweddinggown.com/anh/do-so-do/bang-14-so-do-en.jpg" target="_blank" rel="noopener"><img src="https://vietnamweddinggown.com/anh/do-so-do/bang-14-so-do-en.jpg" alt="Measuring chart: 14 measurements" loading="lazy"></a></div><p class="do-l"><a class="btn-s" href="https://vietnamweddinggown.com/made-to-measure.html#measure" target="_blank" rel="noopener"><span class="en">Fill in your measurement card</span><span class="vi">Điền phiếu số đo</span></a> <span class="en">Then send the card + 3 full‑body photos (front · side · back) on WhatsApp.</span><span class="vi">Gửi phiếu + 3 ảnh toàn thân (trước · ngang · sau) qua WhatsApp.</span><span hidden></span></p>
     <div class="when"><span class="en">Nov 2026</span><span class="vi">Tháng 11/2026</span></div>
     
   </div>
@@ -249,7 +268,7 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
   </ol>
 </section>
 
-<section>
+<section id="agreement">
   <h2><span class="num">4</span><span class="en">Order agreement</span><span class="vi">Hợp đồng đặt may</span></h2>
   <p class="note" style="margin:0 0 10px"><span class="en">Between Dolinhanh Bridal (Vietnam) and Kylah Smook (USA) for one made-to-measure wedding gown, order MTM-2610-KS, dated 30 October 2026.</span><span class="vi">Giữa Dolinhanh Bridal (Việt Nam) và Kylah Smook (Mỹ), may 1 váy cưới theo số đo, mã đơn MTM-2610-KS, ngày 30/10/2026.</span></p>
   <ul class="terms">
@@ -263,7 +282,25 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
     <li><span class="en"><b>Shipping:</b> DHL or FedEx with tracking. Shipping fee and import duties are paid by you.</span><span class="vi"><b>Gửi hàng:</b> DHL/FedEx có mã vận đơn · phí ship + thuế khách trả.</span></li>
     <li><span class="en"><b>Cancellation:</b> payments are not refunded once the step they cover has started.</span><span class="vi"><b>Huỷ đơn:</b> không hoàn tiền các đợt đã trả khi bước đó đã bắt đầu.</span></li>
   </ul>
-  <div class="agree"><span class="en">To confirm, reply on WhatsApp:</span><span class="vi">Để xác nhận, khách nhắn trên WhatsApp:</span><br><b>“I agree”</b></div>
+  <div class="sign" id="sign">
+    <h3><span class="en">Sign online</span><span class="vi">Ký online</span></h3>
+    <label for="kyTen"><span class="en">Your full name</span><span class="vi">Họ tên khách</span></label>
+    <input id="kyTen" type="text" autocomplete="name" value="">
+    <label><span class="en">Sign here with your finger or mouse</span><span class="vi">Ký bằng ngón tay hoặc chuột</span></label>
+    <canvas id="kyCv" width="600" height="200" aria-label="Signature pad"></canvas>
+    <div class="sign-r"><button type="button" class="btn-s vien" id="kyXoa"><span class="en">Clear</span><span class="vi">Ký lại</span></button></div>
+    <label class="chk"><input type="checkbox" id="kyDongY"> <span><span class="en">I have read and agree to this order agreement.</span><span class="vi">Tôi đã đọc và đồng ý hợp đồng này.</span></span></label>
+    <button type="button" class="btn-s" id="kyTao"><span class="en">Sign &amp; create my agreement</span><span class="vi">Ký &amp; tạo hợp đồng</span></button>
+    <p class="loi" id="kyLoi" hidden></p>
+    <div id="kyKq" hidden>
+      <img id="kyAnh" alt="Signed order agreement">
+      <div class="sign-r">
+        <a class="btn-s" id="kyLuu" href="#" download="Dolinhanh-agreement-MTM-2610-KS.png"><span class="en">Save the signed agreement</span><span class="vi">Lưu ảnh hợp đồng</span></a>
+        <a class="btn-s vien" href="https://wa.me/84359950588?text=Hi%20Dolinhanh%20Bridal%2C%20I%20have%20signed%20my%20order%20agreement%20MTM-2610-KS.%20I%20agree%20%F0%9F%A4%8D" target="_blank" rel="noopener"><span class="en">Open WhatsApp</span><span class="vi">Mở WhatsApp</span></a>
+      </div>
+      <p class="note"><span class="en">Save the image, then attach it in our WhatsApp chat. We keep a copy and send you our countersigned version.</span><span class="vi">Khách lưu ảnh rồi gửi vào khung chat WhatsApp · shop lưu lại và gửi bản shop ký xác nhận.</span></p>
+    </div>
+  </div>
 </section>
 
 <section>
@@ -301,6 +338,75 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
       var d=document.createElement("div"); d.className="lb"; var i=document.createElement("img"); i.src=im.src; i.alt=im.alt;
       d.appendChild(i); d.addEventListener("click",function(){ d.remove(); }); document.body.appendChild(d);
     });
+  });
+})();
+
+// Ký HĐ online: gõ tên + ký ngón tay → vẽ ảnh HĐ đã ký (canvas) → khách lưu, gửi WhatsApp
+(function(){
+  var cv=document.getElementById("kyCv"); if(!cv) return;
+  var ctx=cv.getContext("2d"), dang=false, coNet=false;
+  ctx.lineWidth=2.6; ctx.lineCap="round"; ctx.lineJoin="round"; ctx.strokeStyle="#1d1d1b";
+  function diem(e){ var r=cv.getBoundingClientRect(); return [(e.clientX-r.left)*cv.width/r.width,(e.clientY-r.top)*cv.height/r.height]; }
+  cv.addEventListener("pointerdown",function(e){ dang=true; cv.setPointerCapture(e.pointerId); var p=diem(e); ctx.beginPath(); ctx.moveTo(p[0],p[1]); });
+  cv.addEventListener("pointermove",function(e){ if(!dang) return; var p=diem(e); ctx.lineTo(p[0],p[1]); ctx.stroke(); coNet=true; });
+  ["pointerup","pointercancel"].forEach(function(n){ cv.addEventListener(n,function(){ dang=false; }); });
+  document.getElementById("kyXoa").addEventListener("click",function(){ ctx.clearRect(0,0,cv.width,cv.height); coNet=false; });
+
+  var vi=function(){ return document.documentElement.getAttribute("data-lang")==="vi"; };
+  var loi=document.getElementById("kyLoi");
+  function baoLoi(en,v){ loi.textContent=vi()?v:en; loi.hidden=false; }
+
+  function catKy(){ // cắt khoảng trắng quanh chữ ký
+    var d=ctx.getImageData(0,0,cv.width,cv.height).data, x0=cv.width,y0=cv.height,x1=0,y1=0;
+    for(var y=0;y<cv.height;y++)for(var x=0;x<cv.width;x++){ if(d[(y*cv.width+x)*4+3]>10){ if(x<x0)x0=x; if(x>x1)x1=x; if(y<y0)y0=y; if(y>y1)y1=y; } }
+    return [Math.max(0,x0-6),Math.max(0,y0-6),Math.min(cv.width,x1+6)-Math.max(0,x0-6),Math.min(cv.height,y1+6)-Math.max(0,y0-6)];
+  }
+  function dong(c,txt,x,y,w,lh){ // xuống dòng theo bề rộng, trả y mới
+    var tu=txt.split(" "), l="";
+    for(var i=0;i<tu.length;i++){ var th=l?l+" "+tu[i]:tu[i]; if(c.measureText(th).width>w&&l){ c.fillText(l,x,y); y+=lh; l=tu[i]; } else l=th; }
+    if(l){ c.fillText(l,x,y); y+=lh; } return y;
+  }
+
+  document.getElementById("kyTao").addEventListener("click",function(){
+    loi.hidden=true;
+    var ten=document.getElementById("kyTen").value.trim();
+    if(!ten) return baoLoi("Please type your full name.","Khách cần gõ họ tên.");
+    if(!coNet) return baoLoi("Please sign in the box.","Khách cần ký vào ô.");
+    if(!document.getElementById("kyDongY").checked) return baoLoi("Please tick the box to agree.","Khách cần tick ô đồng ý.");
+
+    var W=1080, H=1700, c=document.createElement("canvas"); c.width=W; c.height=H; var g=c.getContext("2d");
+    g.fillStyle="#fff"; g.fillRect(0,0,W,H);
+    g.fillStyle="#8A6B41"; g.font="600 20px 'Be Vietnam Pro',Helvetica,Arial"; g.fillText("DOLINHANH BRIDAL · MADE TO MEASURE",70,90);
+    g.fillStyle="#22231F"; g.font="600 54px 'Cormorant Garamond',Georgia,serif"; g.fillText("Order Agreement",70,160);
+    g.font="400 22px 'Be Vietnam Pro',Helvetica,Arial"; g.fillStyle="#6E6B63";
+    g.fillText("Order MTM-2610-KS · 30 October 2026",70,200);
+    var y=260; g.fillStyle="#22231F";
+    var muc=[
+      ["Parties","Dolinhanh Bridal (Vietnam) and "+ten+" (USA)"],
+      ["Gown","Made-to-measure wedding gown from the bride's inspiration photo: strapless corset, neckline adjusted as agreed, waterfall V waist, full structured skirt with train, minimal lace, ivory tone (white lace over nude lining). Gift: veil embroidered with both names."],
+      ["Price","US$1,880 (US$1,980 less US$100 October offer), fixed."],
+      ["Payments","30% US$564 (received 29 Oct 2026) · 50% US$940 at corset approval · 20% US$376 before shipping."],
+      ["Timing","Ready to ship by 15 March 2027, provided payments and approvals arrive on time. Wedding 1 May 2027."],
+      ["Terms","Sketch, lace, fabric, colour and measurements confirmed in writing before production. Silhouette about 80–90% like the photo, lace details about 50–60%; handmade. Fit approved by photos, videos or video call; small local alterations at the bride's cost. Shipping by DHL/FedEx; shipping fee and import duties paid by the bride. Payments are not refunded once the step they cover has started."]
+    ];
+    muc.forEach(function(m){
+      g.fillStyle="#8A6B41"; g.font="600 19px 'Be Vietnam Pro',Helvetica,Arial"; g.fillText(m[0].toUpperCase(),70,y);
+      g.fillStyle="#22231F"; g.font="400 25px 'Be Vietnam Pro',Helvetica,Arial"; y=dong(g,m[1],70,y+36,W-140,37)+22;
+    });
+    g.strokeStyle="#DEDBD2"; g.lineWidth=2; g.beginPath(); g.moveTo(70,y); g.lineTo(W-70,y); g.stroke(); y+=50;
+    var hn=new Date(), ngay=hn.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+    g.fillStyle="#6E6B63"; g.font="400 21px 'Be Vietnam Pro',Helvetica,Arial";
+    g.fillText("Signed by the bride",70,y); g.fillText("For Dolinhanh Bridal",600,y);
+    var k=catKy(), h=170, w=Math.min(440,k[2]*h/k[3]);
+    g.drawImage(cv,k[0],k[1],k[2],k[3],70,y+20,w,w*k[3]/k[2]);
+    g.fillStyle="#22231F"; g.font="600 25px 'Be Vietnam Pro',Helvetica,Arial";
+    g.fillText(ten,70,y+225); g.fillText("Dolinhanh Bridal",600,y+225);
+    g.fillStyle="#6E6B63"; g.font="400 21px 'Be Vietnam Pro',Helvetica,Arial";
+    g.fillText(ngay+" · I agree",70,y+260); g.fillText("Countersigned on WhatsApp",600,y+260);
+    g.fillText("WhatsApp +84 359 950 588 · vietnamweddinggown.com",70,H-60);
+    var url=c.toDataURL("image/png");
+    document.getElementById("kyAnh").src=url; document.getElementById("kyLuu").href=url;
+    var kq=document.getElementById("kyKq"); kq.hidden=false; kq.scrollIntoView({behavior:"smooth",block:"start"});
   });
 })();
 </script></body></html>
