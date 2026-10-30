@@ -87,9 +87,10 @@ a{color:var(--gold)}
 footer{text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7}
 footer .brand{font-family:var(--f-display);font-size:20px;color:var(--ink);letter-spacing:.04em}
 .st p a{color:var(--gold)}
-.do{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0 6px}
-.do video,.do img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:8px;background:var(--paper-2);display:block}
-.do img{object-fit:contain;background:#fff}
+.do{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin:10px 0 6px}
+.do video{width:min(280px,100%);height:auto;border-radius:8px;background:var(--paper-2);display:block}
+.do a{display:block;width:100%}
+.do img{width:100%;height:auto;border-radius:8px;display:block;border:1px solid var(--line)}
 .do-l{margin:6px 0 2px!important;font-size:13px!important}
 .btn-s{display:inline-block;border:1px solid var(--ink);background:var(--ink);color:var(--bg);border-radius:999px;padding:7px 15px;font:inherit;font-size:13.5px;text-decoration:none;cursor:pointer}
 .btn-s.vien{background:var(--paper);color:var(--ink)}
@@ -191,7 +192,7 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
     <dt><span class="en">Skirt</span><span class="vi">Chân váy</span></dt><dd><span class="en">Full skirt in a structured, slightly stiff fabric that holds its shape, with a train</span><span class="vi">Chân váy đầy, vải đứng phom hơi cứng, có đuôi</span></dd>
     <dt><span class="en">Lace</span><span class="vi">Ren</span></dt><dd><span class="en">Minimal: lighter than your inspiration. You choose the lace from our real videos.</span><span class="vi">Ít ren, nhẹ hơn ảnh mẫu · khách chọn ren qua video thật</span></dd>
     <dt><span class="en">Colour</span><span class="vi">Màu</span></dt><dd><span class="en">White lace over a nude lining for a soft ivory tone, confirmed with the fabric video</span><span class="vi">Ren trắng trên lót nude cho tông ngà · chốt khi xem video vải</span></dd>
-    <dt><span class="en">Made in</span><span class="vi">Thời gian may</span></dt><dd><span class="en">About 3–4 months, ready to ship by 15 March 2027</span><span class="vi">Khoảng 3–4 tháng · gửi chậm nhất 15/03/2027</span></dd>
+    <dt><span class="en">Made in</span><span class="vi">Thời gian may</span></dt><dd><span class="en">Sewing until about February 2027, ready to ship by the end of February 2027</span><span class="vi">May đến khoảng tháng 2/2027 · gửi cuối tháng 2/2027</span></dd>
   </dl>
   <div class="gift">🎁 <span class="en"><b>Our gift:</b> a veil embroidered with both your names.</span><span class="vi"><b>Quà tặng:</b> voan thêu tên cô dâu, chú rể.</span></div>
   <p class="note"><span class="en">Final details are set in your sketch, which you approve before we start sewing.</span><span class="vi">Chi tiết cuối cùng chốt trên phác thảo, khách duyệt rồi mới may.</span></p>
@@ -204,8 +205,8 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
     <tbody>
       <tr><td><span class="en">Gown price</span><span class="vi">Giá váy</span><small><span class="en">US$1,980 less US$100 October offer</span><span class="vi">US$1,980 trừ US$100 ưu đãi tháng 10</span></small></td><td class="amt">US$1,880</td></tr>
       <tr><td><span class="en">1 · Deposit 30%</span><span class="vi">1 · Cọc 30%</span> <span class="badge ok"><span class="en">Received 29 Oct</span><span class="vi">Đã nhận 29/10</span></span><small><span class="en">Next: you send your measurements (within 3 days)</span><span class="vi">Tiếp theo: khách gửi số đo (trong 3 ngày)</span></small></td><td class="amt">US$564</td></tr>
-      <tr><td><span class="en">2 · 50%</span><span class="vi">2 · 50%</span> <span class="badge wait"><span class="en">~13 Nov 2026</span><span class="vi">~13/11/2026</span></span><small><span class="en">In about 2 weeks: lace, sketch, measurements and final sign‑off, then we start sewing</span><span class="vi">Khoảng 2 tuần: chọn ren, lên sketch váy, đo người, chốt may</span></small></td><td class="amt">US$940</td></tr>
-      <tr><td><span class="en">3 · 20%</span><span class="vi">3 · 20%</span> <span class="badge wait">Feb 2027</span><small><span class="en">Finished gown approved, before shipping</span><span class="vi">Váy hoàn thiện, duyệt trước khi gửi</span></small></td><td class="amt">US$376</td></tr>
+      <tr><td><span class="en">2 · 50%</span><span class="vi">2 · 50%</span> <span class="badge wait"><span class="en">Dec 2026</span><span class="vi">Tháng 12/2026</span></span><small><span class="en">After lace, sketch, measurements and sign‑off (about 2 weeks), we build the corset for you to approve</span><span class="vi">Sau ~2 tuần chọn ren, sketch, đo người, chốt may → dựng corset gửi duyệt</span></small></td><td class="amt">US$940</td></tr>
+      <tr><td><span class="en">3 · 20%</span><span class="vi">3 · 20%</span> <span class="badge wait"><span class="en">Feb 2027</span><span class="vi">Tháng 2/2027</span></span><small><span class="en">Finished gown approved, before shipping</span><span class="vi">Váy hoàn thiện, duyệt trước khi gửi</span></small></td><td class="amt">US$376</td></tr>
       <tr class="total"><td><span class="en">Still to pay</span><span class="vi">Còn phải trả</span></td><td class="amt">US$1,316</td></tr>
     </tbody>
   </table>
@@ -256,7 +257,7 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
   <div class="sb">
     <div class="sh"><span class="sn">5</span><b><span class="en">Payment 2: 50%</span><span class="vi">Thanh toán đợt 2: 50%</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
     <p><span class="en">US$940. We build the corset and send photos and clips, or show it on a video call, so you can approve the shape and the V waist.</span><span class="vi">US$940 · dựng corset, gửi ảnh/clip hoặc gọi video để khách duyệt dáng + eo chữ V</span></p>
-    <div class="when"><span class="en">~13 Nov 2026 · about 2 weeks after lace, sketch &amp; measurements are confirmed</span><span class="vi">~13/11/2026 · khoảng 2 tuần: chọn ren, sketch, đo người, chốt may</span></div>
+    <div class="when"><span class="en">Dec 2026 · after about 2 weeks of lace, sketch, measurements &amp; sign‑off</span><span class="vi">Tháng 12/2026 · sau ~2 tuần chọn ren, sketch, đo người, chốt may</span></div>
     
   </div>
 </li>
@@ -273,8 +274,8 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
     <div class="sh"><span class="sn">7</span><b><span class="en">Receive it at home</span><span class="vi">Nhận váy tại nhà</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
-    <p><span class="en">Sent by DHL or FedEx with a tracking number, by 15 March 2027. You pay the shipping fee and import duties.</span><span class="vi">Gửi DHL/FedEx có mã vận đơn, chậm nhất 15/03/2027 · khách trả phí ship + thuế nhập khẩu</span></p>
-    <div class="when"><span class="en">By 15 Mar 2027</span><span class="vi">Trước 15/03/2027</span></div>
+    <p><span class="en">Sent by DHL or FedEx with a tracking number, by the end of February 2027. You pay the shipping fee and import duties.</span><span class="vi">Gửi DHL/FedEx có mã vận đơn, cuối tháng 2/2027 · khách trả phí ship + thuế nhập khẩu</span></p>
+    <div class="when"><span class="en">End of Feb 2027</span><span class="vi">Cuối tháng 2/2027</span></div>
     
   </div>
 </li>
@@ -291,7 +292,7 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
     <li><span class="en"><b>How close:</b> the silhouette comes out about 80–90% like your photo and the lace details about 50–60%. Every gown is handmade.</span><span class="vi"><b>Độ giống:</b> dáng ~80–90% như ảnh, chi tiết ren ~50–60% · váy làm thủ công.</span></li>
     <li><span class="en"><b>Your measurements:</b> you measure at home with our guide and we check them with you. Tell us before measuring if you plan to lose or gain weight.</span><span class="vi"><b>Số đo:</b> khách tự đo theo hướng dẫn, shop kiểm lại · định tăng/giảm cân thì báo trước khi đo.</span></li>
     <li><span class="en"><b>Fit:</b> we approve the shape with you by photos, videos or a video call, not an in‑person fitting. Small alterations where you live may be needed, at your cost.</span><span class="vi"><b>Độ vừa:</b> duyệt dáng qua ảnh/clip/gọi video, không thử trực tiếp · sửa nhỏ tại nơi ở (nếu cần) khách tự chịu.</span></li>
-    <li><span class="en"><b>Timing:</b> ready to ship by 15 March 2027, provided each payment and approval arrives on time.</span><span class="vi"><b>Thời gian:</b> gửi chậm nhất 15/03/2027, với điều kiện khách trả tiền và duyệt đúng hẹn.</span></li>
+    <li><span class="en"><b>Timing:</b> ready to ship by the end of February 2027, provided each payment and approval arrives on time.</span><span class="vi"><b>Thời gian:</b> gửi cuối tháng 2/2027, với điều kiện khách trả tiền và duyệt đúng hẹn.</span></li>
     <li><span class="en"><b>Shipping:</b> DHL or FedEx with tracking. Shipping fee and import duties are paid by you.</span><span class="vi"><b>Gửi hàng:</b> DHL/FedEx có mã vận đơn · phí ship + thuế khách trả.</span></li>
     <li><span class="en"><b>Cancellation:</b> payments are not refunded once the step they cover has started.</span><span class="vi"><b>Huỷ đơn:</b> không hoàn tiền các đợt đã trả khi bước đó đã bắt đầu.</span></li>
   </ul>
@@ -424,8 +425,8 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
       ["Parties","Dolinhanh Bridal (Vietnam) and "+ten+" (USA)"],
       ["Gown","Made-to-measure wedding gown from the bride's inspiration photo: strapless corset, neckline adjusted as agreed, waterfall V waist, full structured skirt with train, minimal lace, ivory tone (white lace over nude lining). Gift: veil embroidered with both names."],
       ["Price","US$1,880 (US$1,980 less US$100 October offer), fixed."],
-      ["Payments","30% US$564 (received 29 Oct 2026) · 50% US$940 at final sign-off (~13 Nov 2026) · 20% US$376 before shipping."],
-      ["Timing","Ready to ship by 15 March 2027, provided payments and approvals arrive on time. Wedding 1 May 2027."],
+      ["Payments","30% US$564 (received 29 Oct 2026) · 50% US$940 at corset stage (Dec 2026) · 20% US$376 when finished, before shipping (Feb 2027)."],
+      ["Timing","Ready to ship by the end of February 2027, provided payments and approvals arrive on time. Wedding 1 May 2027."],
       ["Terms","Sketch, lace, fabric, colour and measurements confirmed in writing before production. Silhouette about 80–90% like the photo, lace details about 50–60%; handmade. Fit approved by photos, videos or video call; small local alterations at the bride's cost. Shipping by DHL/FedEx; shipping fee and import duties paid by the bride. Payments are not refunded once the step they cover has started."]
     ];
     muc.forEach(function(m){
