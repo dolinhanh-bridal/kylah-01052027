@@ -104,6 +104,19 @@ footer .brand{font-family:var(--f-display);font-size:20px;color:var(--ink);lette
 .sign .chk input{width:20px;height:20px;flex-shrink:0;accent-color:var(--done);margin:1px 0 0}
 .loi{color:var(--now);font-size:13.5px;margin:0}
 #kyAnh{width:100%;border:1px solid var(--line);border-radius:8px}
+.sd{display:flex;flex-direction:column}
+.sd-r{display:grid;grid-template-columns:26px 1fr 104px;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);cursor:text}
+.sd-n{font-size:12px;color:var(--gold);font-weight:600;font-variant-numeric:tabular-nums;text-align:center}
+.sd-t{min-width:0;display:flex;flex-direction:column}
+.sd-t b{font-weight:500;font-size:14.5px}
+.sd-t i{font-style:normal;font-size:12px;color:var(--muted)}
+.sd-o{display:flex;align-items:center;gap:5px}
+.sd-o input{width:100%;min-width:0;font:inherit;font-size:16px;padding:7px 8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+.sd-o input:focus-visible,.sign input:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.sd-o em{font-style:normal;font-size:12px;color:var(--muted);width:20px}
+.sd-tt,.daky{background:var(--done-soft);color:var(--done);border-radius:8px;padding:9px 12px;font-size:14px;margin:0 0 10px}
+.daky img{display:block;max-width:220px;max-height:70px;margin-top:6px;background:#fff;border-radius:6px;padding:4px}
+.due{background:var(--now-soft);color:var(--now);border-radius:8px;padding:9px 12px;margin:0 0 10px;font-size:14.5px}
 /* nội bộ */
 .nb{background:var(--paper);border:1px solid var(--gold);border-radius:var(--r);padding:16px}
 .nb h2{font-family:var(--f-display);font-size:24px;margin:0 0 10px}
@@ -233,8 +246,8 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
     <div class="sh"><span class="sn">4</span><b><span class="en">Measure at home</span><span class="vi">Khách tự đo tại nhà</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
-    <p><span class="en">Follow our measuring guide below (1‑minute clip + chart). We check and confirm your measurements before we build the shape.</span><span class="vi">Khách đo theo hướng dẫn bên dưới (clip 1 phút + bảng) · shop kiểm và xác nhận số đo trước khi dựng dáng</span></p><div class="do"><video controls playsinline preload="none" poster="https://vietnamweddinggown.com/anh/do-so-do/clip-do-so-do-en.jpg" width="720" height="1280"><source src="https://vietnamweddinggown.com/anh/do-so-do/clip-do-so-do-en.mp4" type="video/mp4"></video><a href="https://vietnamweddinggown.com/anh/do-so-do/bang-14-so-do-en.jpg" target="_blank" rel="noopener"><img src="https://vietnamweddinggown.com/anh/do-so-do/bang-14-so-do-en.jpg" alt="Measuring chart: 14 measurements" loading="lazy"></a></div><p class="do-l"><a class="btn-s" href="https://vietnamweddinggown.com/made-to-measure.html#measure" target="_blank" rel="noopener"><span class="en">Fill in your measurement card</span><span class="vi">Điền phiếu số đo</span></a> <span class="en">Then send the card + 3 full‑body photos (front · side · back) on WhatsApp.</span><span class="vi">Gửi phiếu + 3 ảnh toàn thân (trước · ngang · sau) qua WhatsApp.</span><span hidden></span></p>
-    <div class="when"><span class="en">Nov 2026</span><span class="vi">Tháng 11/2026</span></div>
+    <p><span class="en">Follow our measuring guide below (1‑minute clip + chart). We check and confirm your measurements before we build the shape.</span><span class="vi">Khách đo theo hướng dẫn bên dưới (clip 1 phút + bảng) · shop kiểm và xác nhận số đo trước khi dựng dáng</span></p><div class="do"><video controls playsinline preload="none" poster="https://vietnamweddinggown.com/anh/do-so-do/clip-do-so-do-en.jpg" width="720" height="1280"><source src="https://vietnamweddinggown.com/anh/do-so-do/clip-do-so-do-en.mp4" type="video/mp4"></video><a href="https://vietnamweddinggown.com/anh/do-so-do/bang-14-so-do-en.jpg" target="_blank" rel="noopener"><img src="https://vietnamweddinggown.com/anh/do-so-do/bang-14-so-do-en.jpg" alt="Measuring chart: 14 measurements" loading="lazy"></a></div><p class="do-l"><a class="btn-s" href="#measure"><span class="en">Fill in your measurement card</span><span class="vi">Điền phiếu số đo</span></a> <span class="en">It saves here on this page. Please save them by 15 November 2026, then send 3 full‑body photos (front · side · back) on WhatsApp.</span><span class="vi">Lưu trên trang này trước 15/11/2026 · gửi thêm 3 ảnh toàn thân (trước · ngang · sau) qua WhatsApp.</span><span hidden></span></p>
+    <div class="when"><span class="en">Please send by 15 Nov 2026</span><span class="vi">Hạn gửi số đo: trước 15/11/2026</span></div>
     
   </div>
 </li>
@@ -282,6 +295,7 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
     <li><span class="en"><b>Shipping:</b> DHL or FedEx with tracking. Shipping fee and import duties are paid by you.</span><span class="vi"><b>Gửi hàng:</b> DHL/FedEx có mã vận đơn · phí ship + thuế khách trả.</span></li>
     <li><span class="en"><b>Cancellation:</b> payments are not refunded once the step they cover has started.</span><span class="vi"><b>Huỷ đơn:</b> không hoàn tiền các đợt đã trả khi bước đó đã bắt đầu.</span></li>
   </ul>
+  <div class="daky" id="daKy" hidden></div>
   <div class="sign" id="sign">
     <h3><span class="en">Sign online</span><span class="vi">Ký online</span></h3>
     <label for="kyTen"><span class="en">Your full name</span><span class="vi">Họ tên khách</span></label>
@@ -303,8 +317,33 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
   </div>
 </section>
 
+<section id="measure">
+  <h2><span class="num">5</span><span class="en">Your measurements</span><span class="vi">Số đo của khách</span></h2>
+  <p class="due"><span class="en">Please save your measurements by <b>15 November 2026</b></span><span class="vi">Hạn khách lưu số đo: <b>trước 15/11/2026</b></span></p>
+  <p class="note" style="margin:0 0 10px"><span class="en">Ask someone to measure you with the guide in step 4, in your wedding underwear. All numbers in cm. Tap Save: it stays here for you and for us.</span><span class="vi">Nhờ người đo theo hướng dẫn ở bước 4, mặc nội y ngày cưới · đơn vị cm · bấm Lưu là lưu luôn trên trang cho cả khách và shop.</span></p>
+  <p class="sd-tt" id="sdTT" hidden></p>
+  <div class="sd" data-api="https://script.google.com/macros/s/AKfycbwk-MGoHzM6c7bb9FX5jevAI6H83bmhwePw5gcvvAYKISomIvJ4m1daPpG70rVo3KVhTQ/exec" data-don="MTM-2610-KS">
+<label class="sd-r" for="sd1"><span class="sd-n">1</span><span class="sd-t"><b><span class="en">Full bust</span><span class="vi">Vòng ngực đầy</span></b><i><span class="en">Over both apexes, level across the back</span><span class="vi">Qua 2 đỉnh ngực, thước ngang ở lưng</span></i></span><span class="sd-o"><input id="sd1" data-n="1" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd2"><span class="sd-n">2</span><span class="sd-t"><b><span class="en">High bust</span><span class="vi">Vòng ngực trên</span></b><i><span class="en">Under the arms, above the bust</span><span class="vi">Sát dưới nách, trên bầu ngực</span></i></span><span class="sd-o"><input id="sd2" data-n="2" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd3"><span class="sd-n">3</span><span class="sd-t"><b><span class="en">Underbust</span><span class="vi">Vòng chân ngực</span></b><i><span class="en">Where your bra band sits</span><span class="vi">Đúng chỗ dây áo lót nằm</span></i></span><span class="sd-o"><input id="sd3" data-n="3" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd4"><span class="sd-n">4</span><span class="sd-t"><b><span class="en">Natural waist</span><span class="vi">Vòng eo tự nhiên</span></b><i><span class="en">Lean sideways: the crease is your waist</span><span class="vi">Nghiêng người, chỗ gập là eo</span></i></span><span class="sd-o"><input id="sd4" data-n="4" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd5"><span class="sd-n">5</span><span class="sd-t"><b><span class="en">Apex to apex</span><span class="vi">Khoảng cách 2 đỉnh ngực</span></b><i><span class="en">Straight across, point to point</span><span class="vi">Đo thẳng đỉnh này sang đỉnh kia</span></i></span><span class="sd-o"><input id="sd5" data-n="5" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd6"><span class="sd-n">6</span><span class="sd-t"><b><span class="en">Front waist length</span><span class="vi">Dài thân trước</span></b><i><span class="en">Side neck → over the apex → waist</span><span class="vi">Chân cổ → qua đỉnh ngực → eo</span></i></span><span class="sd-o"><input id="sd6" data-n="6" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd7"><span class="sd-n">7</span><span class="sd-t"><b><span class="en">Back length</span><span class="vi">Dài lưng</span></b><i><span class="en">Neck bone → waist</span><span class="vi">Đốt xương gáy → eo</span></i></span><span class="sd-o"><input id="sd7" data-n="7" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd8"><span class="sd-n">8</span><span class="sd-t"><b><span class="en">Bicep</span><span class="vi">Vòng bắp tay</span></b><i><span class="en">Fullest part, arm relaxed</span><span class="vi">Chỗ to nhất, tay thả lỏng</span></i></span><span class="sd-o"><input id="sd8" data-n="8" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd9"><span class="sd-n">9</span><span class="sd-t"><b><span class="en">Sleeve length</span><span class="vi">Dài tay</span></b><i><span class="en">Only if your gown has sleeves</span><span class="vi">Chỉ đo khi váy có tay</span></i></span><span class="sd-o"><input id="sd9" data-n="9" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd10"><span class="sd-n">10</span><span class="sd-t"><b><span class="en">Wrist</span><span class="vi">Vòng cổ tay</span></b><i><span class="en">Only if your gown has sleeves</span><span class="vi">Chỉ đo khi váy có tay</span></i></span><span class="sd-o"><input id="sd10" data-n="10" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd11"><span class="sd-n">11</span><span class="sd-t"><b><span class="en">High hip</span><span class="vi">Vòng mông trên</span></b><i><span class="en">8–10 cm below the waist</span><span class="vi">Dưới eo 8–10 cm</span></i></span><span class="sd-o"><input id="sd11" data-n="11" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd12"><span class="sd-n">12</span><span class="sd-t"><b><span class="en">Full hip</span><span class="vi">Vòng mông</span></b><i><span class="en">Fullest part, feet together</span><span class="vi">Chỗ đầy nhất, khép chân</span></i></span><span class="sd-o"><input id="sd12" data-n="12" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd13"><span class="sd-n">13</span><span class="sd-t"><b><span class="en">Waist to floor</span><span class="vi">Eo xuống sàn</span></b><i><span class="en">Down your side, barefoot</span><span class="vi">Dọc bên hông, chân trần</span></i></span><span class="sd-o"><input id="sd13" data-n="13" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label>
+<label class="sd-r" for="sd14"><span class="sd-n">14</span><span class="sd-t"><b><span class="en">Hollow to floor</span><span class="vi">Hõm cổ xuống sàn</span></b><i><span class="en">Barefoot</span><span class="vi">Chân trần</span></i></span><span class="sd-o"><input id="sd14" data-n="14" inputmode="decimal" autocomplete="off" maxlength="6"><em>cm</em></span></label><label class="sd-r" for="sd_cao"><span class="sd-n">·</span><span class="sd-t"><b><span class="en">Height</span><span class="vi">Chiều cao</span></b><i><span class="en">Barefoot</span><span class="vi">Chân trần</span></i></span><span class="sd-o"><input id="sd_cao" inputmode="decimal" autocomplete="off" maxlength="5"><em>cm</em></span></label><label class="sd-r" for="sd_nang"><span class="sd-n">·</span><span class="sd-t"><b><span class="en">Weight</span><span class="vi">Cân nặng</span></b><i><span class="en">Optional</span><span class="vi">Không bắt buộc</span></i></span><span class="sd-o"><input id="sd_nang" inputmode="decimal" autocomplete="off" maxlength="5"><em>kg</em></span></label><label class="sd-r" for="sd_got"><span class="sd-n">·</span><span class="sd-t"><b><span class="en">Heel height</span><span class="vi">Độ cao gót</span></b><i><span class="en">Wedding shoes; no shoes yet? put 7</span><span class="vi">Giày cưới; chưa có ghi 7</span></i></span><span class="sd-o"><input id="sd_got" inputmode="decimal" autocomplete="off" maxlength="5"><em>cm</em></span></label>
+  </div>
+  <div class="sign-r" style="margin-top:12px"><button type="button" class="btn-s" id="sdLuu"><span class="en">Save my measurements</span><span class="vi">Lưu số đo</span></button></div>
+  <p class="loi" id="sdLoi" hidden></p>
+</section>
+
 <section>
-  <h2><span class="num">5</span><span class="en">Payment details</span><span class="vi">Thông tin chuyển khoản</span></h2>
+  <h2><span class="num">6</span><span class="en">Payment details</span><span class="vi">Thông tin chuyển khoản</span></h2>
   <div class="bank">
     <div><span><span class="en">Account name</span><span class="vi">Tên tài khoản</span></span><b>DO XUAN CUONG</b></div>
     <div><span><span class="en">Account number</span><span class="vi">Số tài khoản</span></span><b>2288888</b></div>
@@ -405,8 +444,71 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
     g.fillText(ngay+" · I agree",70,y+260); g.fillText("Countersigned on WhatsApp",600,y+260);
     g.fillText("WhatsApp +84 359 950 588 · vietnamweddinggown.com",70,H-60);
     var url=c.toDataURL("image/png");
+    // bản chữ ký nhỏ (≤ 8000 ký tự) để lưu lên kho
+    var nh=document.createElement("canvas"), sc=Math.min(1,220/k[2],70/k[3]); nh.width=Math.max(1,Math.round(k[2]*sc)); nh.height=Math.max(1,Math.round(k[3]*sc));
+    var nc=nh.getContext("2d"); nc.fillStyle="#fff"; nc.fillRect(0,0,nh.width,nh.height); nc.drawImage(cv,k[0],k[1],k[2],k[3],0,0,nh.width,nh.height);
+    var nho=nh.toDataURL("image/jpeg",0.6); if(nho.length>8000) nho=nh.toDataURL("image/jpeg",0.3);
+    if(window.__luuKy) window.__luuKy(ten,nho);
     document.getElementById("kyAnh").src=url; document.getElementById("kyLuu").href=url;
     var kq=document.getElementById("kyKq"); kq.hidden=false; kq.scrollIntoView({behavior:"smooth",block:"start"});
   });
+})();
+
+// Số đo + chữ ký lưu ở kho Apps Script (DLA-may-do-kho) → mở link là thấy lại, cho cả khách và shop
+(function(){
+  var box=document.querySelector(".sd"); if(!box) return;
+  var API=box.dataset.api, DON=box.dataset.don, KHOA="dla-may-do-2026";
+  var vi=function(){ return document.documentElement.getAttribute("data-lang")==="vi"; };
+  var tt=document.getElementById("sdTT"), loi=document.getElementById("sdLoi"), nut=document.getElementById("sdLuu");
+  var BAT_BUOC=[1,2,3,4,5,6,7,11,12,13,14];
+  function ngay(iso){ var d=new Date(iso); return d.toLocaleDateString(vi()?"vi-VN":"en-GB",{day:"numeric",month:"short",year:"numeric"})+" "+d.toLocaleTimeString(vi()?"vi-VN":"en-GB",{hour:"2-digit",minute:"2-digit"}); }
+  var SD=null, KY=null;
+  function veSoDo(){
+    if(!SD){ tt.hidden=true; return; }
+    for(var i=1;i<=14;i++){ var el=document.getElementById("sd"+i); if(el&&document.activeElement!==el) el.value=SD.m&&SD.m[i]!=null?SD.m[i]:""; }
+    ["cao","nang","got"].forEach(function(k){ var el=document.getElementById("sd_"+k); if(document.activeElement!==el) el.value=SD[k]!=null?SD[k]:""; });
+    var n=Object.keys(SD.m||{}).length;
+    tt.textContent=(vi()?"✓ Đã lưu "+n+"/14 số đo · ":"✓ Saved "+n+"/14 measurements · ")+ngay(SD.luc);
+    tt.hidden=false;
+  }
+  function veKy(){
+    var el=document.getElementById("daKy"); if(!el) return;
+    if(!KY){ el.hidden=true; return; }
+    el.textContent=(vi()?"✓ Đã ký bởi ":"✓ Signed by ")+KY.ten+" · "+ngay(KY.luc);
+    if(KY.anh){ var im=document.createElement("img"); im.src=KY.anh; im.alt="Signature"; el.appendChild(im); }
+    el.hidden=false;
+  }
+  function ve(){ veSoDo(); veKy(); }
+  document.querySelectorAll(".lang button").forEach(function(b){ b.addEventListener("click",function(){ setTimeout(ve,0); }); });
+
+  function goi(body){
+    return fetch(API,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(body)}).then(function(r){ return r.json(); });
+  }
+  fetch(API+"?don="+encodeURIComponent(DON)).then(function(r){ return r.json(); }).then(function(d){
+    if(d&&d.ok){ SD=d.sodo; KY=d.ky; ve(); }
+  }).catch(function(){});
+
+  nut.addEventListener("click",function(){
+    loi.hidden=true;
+    var m={}, thieu=[];
+    for(var i=1;i<=14;i++){ var v=document.getElementById("sd"+i).value.trim().replace(",","."); if(v){ var x=parseFloat(v); if(!(x>0&&x<400)){ loi.textContent=(vi()?"Số "+i+" chưa đúng.":"Number "+i+" doesn't look right."); loi.hidden=false; return; } m[i]=x; } else if(BAT_BUOC.indexOf(i)>=0) thieu.push(i); }
+    var body={k:KHOA,don:DON,a:"sodo",m:m,ten:"Kylah Smook"};
+    ["cao","nang","got"].forEach(function(k){ body[k]=document.getElementById("sd_"+k).value.trim().replace(",","."); });
+    nut.disabled=true; nut.textContent=vi()?"Đang lưu…":"Saving…";
+    goi(body).then(function(d){
+      nut.disabled=false; nut.textContent=vi()?"Lưu số đo":"Save my measurements";
+      if(!d.ok) throw 0;
+      SD=d.sodo; veSoDo();
+      if(thieu.length){ loi.textContent=(vi()?"Đã lưu. Còn thiếu số: ":"Saved. Still missing: ")+thieu.join(", "); loi.hidden=false; }
+    }).catch(function(){
+      nut.disabled=false; nut.textContent=vi()?"Lưu số đo":"Save my measurements";
+      loi.textContent=vi()?"Chưa lưu được. Kiểm tra mạng rồi bấm lại.":"Couldn't save. Check your connection and tap Save again."; loi.hidden=false;
+    });
+  });
+
+  // sign.js gọi khi khách ký xong
+  window.__luuKy=function(ten,anh){
+    goi({k:KHOA,don:DON,a:"ky",ten:ten,anh:anh}).then(function(d){ if(d.ok){ KY=d.ky; veKy(); } }).catch(function(){});
+  };
 })();
 </script></body></html>
