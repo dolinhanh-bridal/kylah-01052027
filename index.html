@@ -69,6 +69,7 @@ ol.steps::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:
 .sn{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
 .st p{margin:3px 0 2px;color:var(--muted);font-size:14px}
 .st.now p{color:var(--ink)}
+.st.pay .sb{background:var(--gold-soft);border-radius:8px;padding:8px 10px;margin-top:-4px}
 .when{font-size:12px;color:var(--gold);font-weight:500}
 .pill{font-size:11px;border-radius:999px;padding:1px 8px;background:var(--paper-2);color:var(--muted)}
 .st.done .pill{background:var(--done-soft);color:var(--done)}
@@ -181,67 +182,50 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
 </section>
 
 <section>
-  <h2><span class="num">3</span><span class="en">Your steps</span><span class="vi">Các bước làm váy</span></h2>
+  <h2><span class="num">3</span><span class="en">Your 7 steps</span><span class="vi">7 bước làm váy</span></h2>
+  <p class="note" style="margin:0 0 12px"><span class="en">You pay first, then we make each step. Coloured boxes = payment steps.</span><span class="vi">Khách trả trước, shop làm từng bước · ô màu = bước thanh toán.</span></p>
   <ol class="steps">
 <li class="st done">
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
-    <div class="sh"><span class="sn">1</span><b><span class="en">Design chosen &amp; quoted</span><span class="vi">Chốt mẫu &amp; báo giá</span></b><span class="pill"><span class="en">Done</span><span class="vi">Xong</span></span></div>
-    <p><span class="en">Your inspiration photo, the waterfall V waist and the changes you want</span><span class="vi">Ảnh váy khách thử + eo waterfall chữ V + các chỗ sửa</span></p>
-    <div class="when"><span class="en">22–25 Oct 2026</span><span class="vi">22–25/10/2026</span></div>
+    <div class="sh"><span class="sn">1</span><b><span class="en">Choose your design</span><span class="vi">Chọn mẫu</span></b><span class="pill"><span class="en">Done</span><span class="vi">Xong</span></span></div>
+    <p><span class="en">Your inspiration photo, the waterfall V waist and the changes you want. Wedding 1 May 2027, shipping to California.</span><span class="vi">Ảnh váy khách thử + eo waterfall chữ V + các chỗ muốn sửa · cưới 01/05/2027 · gửi về California</span></p>
+    <div class="when"><span class="en">22 Oct 2026</span><span class="vi">22/10/2026</span></div>
     
   </div>
 </li>
-<li class="st done pay">
+<li class="st done">
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
-    <div class="sh"><span class="sn">2</span><b><span class="en">Payment 1 · 30% received</span><span class="vi">Đợt 1 · 30% đã nhận</span></b><span class="pill"><span class="en">Done</span><span class="vi">Xong</span></span></div>
-    <p><span class="en">US$564 by Wise, arrived 29 Oct 2026. Thank you!</span><span class="vi">US$564 qua Wise, về tài khoản 29/10/2026</span></p>
-    <div class="when"><span class="en">29 Oct 2026</span><span class="vi">29/10/2026</span></div>
+    <div class="sh"><span class="sn">2</span><b><span class="en">See the fabrics &amp; get your quote</span><span class="vi">Xem vải &amp; nhận báo giá</span></b><span class="pill"><span class="en">Done</span><span class="vi">Xong</span></span></div>
+    <p><span class="en">Real videos of our laces, your quote of US$1,880 and shipping of about US$100–120.</span><span class="vi">Đã gửi video ren thật · báo giá US$1,880 · ship ~US$100–120</span></p>
+    <div class="when"><span class="en">23–25 Oct 2026</span><span class="vi">23–25/10/2026</span></div>
     
   </div>
 </li>
-<li class="st now">
+<li class="st now pay">
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
-    <div class="sh"><span class="sn">3</span><b><span class="en">Confirm this order agreement</span><span class="vi">Khách xác nhận hợp đồng</span></b><span class="pill"><span class="en">Your turn</span><span class="vi">Đến lượt khách</span></span></div>
-    <p><span class="en">Read section 4 and reply <b>“I agree”</b> on WhatsApp. Please also send your partner's name for the veil embroidery.</span><span class="vi">Khách đọc mục 4, nhắn <b>“I agree”</b> trên WhatsApp + gửi tên chú rể để thêu voan</span></p>
-    <div class="when"><span class="en">Now</span><span class="vi">Bây giờ</span></div>
+    <div class="sh"><span class="sn">3</span><b><span class="en">Payment 1: 30%</span><span class="vi">Thanh toán đợt 1: 30%</span></b><span class="pill"><span class="en">Your turn</span><span class="vi">Đến lượt khách</span></span></div>
+    <p><span class="en"><b>US$564 received on 29 Oct. Thank you!</b> Now: please reply <b>“I agree”</b> to the order agreement below and send your partner's name for the veil. Then our designer draws your sketch and we choose the lace and fabric together.</span><span class="vi"><b>Đã nhận US$564 ngày 29/10.</b> Đang làm: khách nhắn <b>“I agree”</b> + tên chú rể → designer vẽ phác thảo, cùng khách chọn ren, vải</span></p>
+    <div class="when"><span class="en">Now · Nov 2026</span><span class="vi">Đang làm · tháng 11/2026</span></div>
     
   </div>
 </li>
 <li class="st next">
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
-    <div class="sh"><span class="sn">4</span><b><span class="en">Sketch, lace &amp; fabric</span><span class="vi">Phác thảo + chọn ren, vải</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
-    <p><span class="en">Our designer draws your sketch. We send real videos of 2–3 minimal laces, the structured skirt fabric and the nude lining for your ivory tone, then you choose.</span><span class="vi">Designer vẽ phác thảo · quay video 2–3 mẫu ren ít, vải chân váy đứng phom, lót nude cho tông ngà → khách chọn</span></p>
+    <div class="sh"><span class="sn">4</span><b><span class="en">Measure at home</span><span class="vi">Khách tự đo tại nhà</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
+    <p><span class="en">Follow our measuring guide (1‑minute clip + chart). We check and confirm your measurements before we build the shape.</span><span class="vi">Khách đo theo hướng dẫn (clip 1 phút + bảng) · shop kiểm và xác nhận số đo trước khi dựng dáng</span></p>
     <div class="when"><span class="en">Nov 2026</span><span class="vi">Tháng 11/2026</span></div>
-    
-  </div>
-</li>
-<li class="st next">
-  <div class="dot" aria-hidden="true"></div>
-  <div class="sb">
-    <div class="sh"><span class="sn">5</span><b><span class="en">Measure at home</span><span class="vi">Khách tự đo tại nhà</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
-    <p><span class="en">Follow our 1‑minute measuring guide. We check your numbers with you before we cut.</span><span class="vi">Gửi hướng dẫn đo (clip 1 phút + bảng) → shop kiểm số đo với khách trước khi cắt</span></p>
-    <div class="when"><span class="en">Nov 2026</span><span class="vi">Tháng 11/2026</span></div>
-    
-  </div>
-</li>
-<li class="st next">
-  <div class="dot" aria-hidden="true"></div>
-  <div class="sb">
-    <div class="sh"><span class="sn">6</span><b><span class="en">Everything confirmed in writing</span><span class="vi">Chốt bằng chữ trước khi may</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
-    <p><span class="en">Sketch, lace, fabric, colour and measurements confirmed by both of us on WhatsApp before production.</span><span class="vi">Phác thảo, ren, vải, màu, số đo — hai bên xác nhận bằng chữ trên WhatsApp (chụp màn lưu lại)</span></p>
-    <div class="when"><span class="en">Late Nov 2026</span><span class="vi">Cuối 11/2026</span></div>
     
   </div>
 </li>
 <li class="st next pay">
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
-    <div class="sh"><span class="sn">7</span><b><span class="en">Payment 2 · 50% · corset check</span><span class="vi">Đợt 2 · 50% · duyệt corset</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
-    <p><span class="en">US$940. We build the corset to your measurements and send photos and videos (or a video call) so you can approve the shape and the V waist.</span><span class="vi">US$940 → dựng corset theo số đo → gửi ảnh/clip hoặc gọi video cho khách duyệt dáng + eo chữ V</span></p>
+    <div class="sh"><span class="sn">5</span><b><span class="en">Payment 2: 50%</span><span class="vi">Thanh toán đợt 2: 50%</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
+    <p><span class="en">US$940. We build the corset and send photos and clips, or show it on a video call, so you can approve the shape and the V waist.</span><span class="vi">US$940 · dựng corset, gửi ảnh/clip hoặc gọi video để khách duyệt dáng + eo chữ V</span></p>
     <div class="when"><span class="en">Jan 2027</span><span class="vi">Tháng 1/2027</span></div>
     
   </div>
@@ -249,8 +233,8 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
 <li class="st next pay">
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
-    <div class="sh"><span class="sn">8</span><b><span class="en">Payment 3 · 20% · finished gown</span><span class="vi">Đợt 3 · 20% · váy hoàn thiện</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
-    <p><span class="en">US$376. You see the finished gown and your embroidered veil in photos and videos and approve before shipping.</span><span class="vi">US$376 → khách xem váy + voan thêu tên qua ảnh/clip, duyệt rồi mới gửi</span></p>
+    <div class="sh"><span class="sn">6</span><b><span class="en">Final payment: 20%</span><span class="vi">Thanh toán cuối: 20%</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
+    <p><span class="en">US$376. You see the finished gown and your embroidered veil in photos, clips or on a video call and confirm before we ship.</span><span class="vi">US$376 · khách xem váy hoàn thiện + voan thêu tên qua ảnh/clip/gọi video, xác nhận rồi mới gửi</span></p>
     <div class="when"><span class="en">Feb 2027</span><span class="vi">Tháng 2/2027</span></div>
     
   </div>
@@ -258,8 +242,8 @@ pre.tin{white-space:pre-wrap;font:inherit;font-size:14px;background:var(--paper-
 <li class="st next">
   <div class="dot" aria-hidden="true"></div>
   <div class="sb">
-    <div class="sh"><span class="sn">9</span><b><span class="en">Shipped to you</span><span class="vi">Gửi hàng</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
-    <p><span class="en">DHL or FedEx with tracking, ready to ship by 15 March 2027, about 6 weeks before your wedding. Shipping about US$100–120 and US import duties are paid on your side.</span><span class="vi">DHL/FedEx có mã vận đơn · gửi chậm nhất 15/03/2027 (trước cưới ~6 tuần) · ship ~US$100–120 + thuế nhập khẩu khách trả</span></p>
+    <div class="sh"><span class="sn">7</span><b><span class="en">Receive it at home</span><span class="vi">Nhận váy tại nhà</span></b><span class="pill"><span class="en">Coming</span><span class="vi">Sắp tới</span></span></div>
+    <p><span class="en">Sent by DHL or FedEx with a tracking number, by 15 March 2027. You pay the shipping fee and import duties.</span><span class="vi">Gửi DHL/FedEx có mã vận đơn, chậm nhất 15/03/2027 · khách trả phí ship + thuế nhập khẩu</span></p>
     <div class="when"><span class="en">By 15 Mar 2027</span><span class="vi">Trước 15/03/2027</span></div>
     
   </div>
